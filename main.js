@@ -1,9 +1,10 @@
 // I need to add the player input into a variable into the file.
+
+
 let askTheQuestion = "You won! Can we do a best out of three?";
-// This is a function is going to run when the shot button is hunt.
-// Also this function is going to return a lower case input to check in the If statement
+// This is the function that is going to be called when the button is clicked
 function gamePlay() {
-  // This is getting that what the play said and putting it inside a variable
+  // This is the variable that is going to be called when the button is clicked
   let theShot = document.getElementById("thePlayerShot").value;
   // In this line I make play inner to me a lower case by ues a toLowerCase() down below.
   //  console.log(typeof theShot);
@@ -18,6 +19,22 @@ function gamePlay() {
     document.getElementById("printMyShot").innerHTML = "Winner";
     // This is going to print b/c you want to do three rounds
     document.getElementById("asksTheQuestion").innerHTML = askTheQuestion;
+    
+    
+  }
+  else if (lower === "paper"){
+    document.getElementById("printMyShot").innerHTML = "You lost";
+    // This is going to print b/c you want to do three rounds
+    document.getElementById("asksTheQuestion").innerHTML = askTheQuestion
+  
+  }
+  else if (lower === "scissors"){
+    document.getElementById("printMyShot").innerHTML = "Tie";
+    // This is going to print b/c you want to do three rounds
+    document.getElementById("asksTheQuestion").innerHTML = askTheQuestion
+  }
+  else {
+    document.getElementById("printMyShot").innerHTML = "You put something else or I'm not sure what that is";
   }
 
   // Now that I have made this lower Case I can put that in a If statement
