@@ -1,6 +1,5 @@
 // I need to add the player input into a variable into the file.
 
-<<<<<<< Updated upstream
 function  printOut(){
   let askTheQuestion = "You won! Can we do a best out of three?";
   
@@ -39,9 +38,7 @@ function gamePlay() {
     document.getElementById("printMyShot").innerHTML = "You put something else or I'm not sure what that is";
   }
 
+ 
   // Now that I have made this lower Case I can put that in a If statement
 }
-=======
-    return null;
-};
->>>>>>> Stashed changes
+  
