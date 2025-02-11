@@ -13,12 +13,14 @@ function gamePlay() {
   //   console.log(lower);
   //   console.log(lower === "rock");
   if (lower === "rock"){
-    console.log("They put Rock");  
+    // console.log("They put Rock");  
     // Print the words that I have lost best two out of three.
     document.getElementById("printMyShot").innerHTML = "Winner";
     // This is going to print b/c you want to do three rounds
     document.getElementById("asksTheQuestion").innerHTML = askTheQuestion;
+    
   }
+  
 
   // Now that I have made this lower Case I can put that in a If statement
 }
